@@ -86,7 +86,7 @@ enum {
     return @"XMLDocument";
 }
 
-- (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError
+- (NSData *)writeToURL:(NSURL *)typeName error:(NSError **)outError
 {
     // Insert code here to write your document to data of the specified type. If the given outError != NULL, ensure that you set *outError when returning nil.
 

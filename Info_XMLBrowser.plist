@@ -10,6 +10,7 @@
 			<key>CFBundleTypeExtensions</key>
 			<array>
 				<string>xml</string>
+				<string>plist</string>
 			</array>
 			<key>CFBundleTypeName</key>
 			<string>xml</string>
