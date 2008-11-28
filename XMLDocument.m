@@ -86,17 +86,17 @@ enum {
     return @"XMLDocument";
 }
 
-- (NSData *)writeToURL:(NSURL *)typeName error:(NSError **)outError
-{
-    // Insert code here to write your document to data of the specified type. If the given outError != NULL, ensure that you set *outError when returning nil.
-
-    // You can also choose to override -fileWrapperOfType:error:, -writeToURL:ofType:error:, or -writeToURL:ofType:forSaveOperation:originalContentsURL:error: instead.
-
-    // For applications targeted for Panther or earlier systems, you should use the deprecated API -dataRepresentationOfType:. In this case you can also choose to override -fileWrapperRepresentationOfType: or -writeToFile:ofType: instead.
-
-    return nil;
-}
-
+//- (NSData *)writeToURL:(NSURL *)typeName error:(NSError **)outError
+//{
+//    // Insert code here to write your document to data of the specified type. If the given outError != NULL, ensure that you set *outError when returning nil.
+//
+//    // You can also choose to override -fileWrapperOfType:error:, -writeToURL:ofType:error:, or -writeToURL:ofType:forSaveOperation:originalContentsURL:error: instead.
+//
+//    // For applications targeted for Panther or earlier systems, you should use the deprecated API -dataRepresentationOfType:. In this case you can also choose to override -fileWrapperRepresentationOfType: or -writeToFile:ofType: instead.
+//
+//    return nil;
+//}
+//
 - (BOOL)readFromURL:(NSURL *)inputurl ofType:(NSString *)typeName error:(NSError **)outError
 {
 	NSError * error = nil;
@@ -140,6 +140,7 @@ enum {
 - (void)dealloc {
     [url release];
     [self setData:nil encoding:nil];
+	resultTextView = nil;
     [self setDocument:nil];
     [self setCurrent:nil];
     [alertSheet release];
@@ -504,6 +505,7 @@ enum {
 - (void)setResultTextViewString:(NSString*)string
 {
     if (!string) string = @"";
+	// This
     [resultTextView setString:string];
 }
 

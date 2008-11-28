@@ -16,6 +16,7 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		CBA83F720E8D8E1D004DA6FB /* XMLDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA83F710E8D8E1D004DA6FB /* XMLDocumentController.m */; };
 		CBD64BFE0E8B987A00F84D86 /* XMLDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBD64BFC0E8B987A00F84D86 /* XMLDocument.xib */; };
 		CBD64C010E8B989A00F84D86 /* XMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD64C000E8B989A00F84D86 /* XMLDocument.m */; };
 		CBDDCE200E6B22A900A73C73 /* VBTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDDCE1F0E6B22A900A73C73 /* VBTextView.m */; };
@@ -36,6 +37,8 @@
 		8C496EBE06790346008C0B04 /* XMLBrowser_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = XMLBrowser_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info_XMLBrowser.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_XMLBrowser.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* XMLBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMLBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBA83F700E8D8E1D004DA6FB /* XMLDocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDocumentController.h; sourceTree = "<group>"; };
+		CBA83F710E8D8E1D004DA6FB /* XMLDocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDocumentController.m; sourceTree = "<group>"; };
 		CBD64BFD0E8B987A00F84D86 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/XMLDocument.xib; sourceTree = "<group>"; };
 		CBD64BFF0E8B989A00F84D86 /* XMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDocument.h; sourceTree = "<group>"; };
 		CBD64C000E8B989A00F84D86 /* XMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDocument.m; sourceTree = "<group>"; };
@@ -66,6 +69,8 @@
 				8C496EBB0679033C008C0B04 /* NodeKindValueTransformer.m */,
 				CBDDCE1E0E6B22A900A73C73 /* VBTextView.h */,
 				CBDDCE1F0E6B22A900A73C73 /* VBTextView.m */,
+				CBA83F700E8D8E1D004DA6FB /* XMLDocumentController.h */,
+				CBA83F710E8D8E1D004DA6FB /* XMLDocumentController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -201,6 +206,7 @@
 				8C496EBD0679033C008C0B04 /* NodeKindValueTransformer.m in Sources */,
 				CBDDCE200E6B22A900A73C73 /* VBTextView.m in Sources */,
 				CBD64C010E8B989A00F84D86 /* XMLDocument.m in Sources */,
+				CBA83F720E8D8E1D004DA6FB /* XMLDocumentController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

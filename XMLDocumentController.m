@@ -27,18 +27,20 @@
 - (void)didEndSheet:(NSWindow *)sheet returnCode:(int)returnCode contextInfo:(void *)contextInfo
 {
 	NSURL	* xmlURI;
+	NSError * error;
 	
     [sheet orderOut:self];
 	switch (returnCode)
 	{
 		case 1:
-				[self openDocumentWithContentsOfURL:xmlURI display:YES error:&error];
-			break;
+			xmlURI = [NSURL URLWithString:[openURITextField stringValue]];
+			[self openDocumentWithContentsOfURL:xmlURI display:YES error:&error];
+		break;
 	}
 }
 
 - (NSString *)typeForContentsOfURL:(NSURL *)inAbsoluteURL error:(NSError **)outError
 {	
-	return [self typeFromFileExtension:[[inAbsoluteURL absoluteString] pathExtension] ];
+	return @"xml";
 }
 @end

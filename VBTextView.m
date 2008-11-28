@@ -21,18 +21,20 @@
 
 - (IBAction *) escapeQuotes:(id)sender
 {
-	NSMutableString * theString = [[self string] mutableCopy];
+	NSMutableString * theString = [[[self string] mutableCopy] autorelease];
 	
 	[theString replaceOccurrencesOfString:@"\"" withString:@"\\\"" options:NSLiteralSearch range:NSMakeRange(0, [theString length])];
-	
+	[theString replaceOccurrencesOfString:@"\n" withString:@"\\n\\\n" options:NSLiteralSearch range:NSMakeRange(0, [theString length])];
 	[self setString:theString];
 }
 
 - (IBAction *) unescapeQuotes:(id)sender
 {
-	NSMutableString * theString = [[self string] mutableCopy];
+	NSMutableString * theString = [[[self string] mutableCopy] autorelease];
 	
 	[theString replaceOccurrencesOfString:@"\\\"" withString:@"\"" options:NSLiteralSearch range:NSMakeRange(0, [theString length])];
+	[theString replaceOccurrencesOfString:@"\\\n" withString:@"" options:NSLiteralSearch range:NSMakeRange(0, [theString length])];
+	[theString replaceOccurrencesOfString:@"\\n" withString:@"\n" options:NSLiteralSearch range:NSMakeRange(0, [theString length])];
 	
 	[self setString:theString];
 }

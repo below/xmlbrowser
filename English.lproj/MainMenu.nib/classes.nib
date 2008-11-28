@@ -7,6 +7,28 @@
 		<dict>
 			<key>ACTIONS</key>
 			<dict>
+				<key>URIButtonAction</key>
+				<string>id</string>
+				<key>openURI</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>XMLDocumentController</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>OUTLETS</key>
+			<dict>
+				<key>openURISheet</key>
+				<string>NSWindow</string>
+				<key>openURITextField</key>
+				<string>NSTextField</string>
+			</dict>
+			<key>SUPERCLASS</key>
+			<string>NSDocumentController</string>
+		</dict>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
 				<key>escapeQuotes</key>
 				<string>id</string>
 				<key>unescapeQuotes</key>
