@@ -128,6 +128,11 @@ enum {
     return YES;
 }
 
+- (BOOL)loadDataRepresentation:(NSData *)data ofType:(NSString *)type
+{
+	DebugStr("We are here");
+}
+
 - (void)windowControllerDidLoadNib:(NSWindowController *)windowController
 {
 	[self updateSourceTextView];
@@ -210,8 +215,9 @@ enum {
 //    then display it in the text view 
 - (IBAction)fetchAndDisplayURL:(id)sender {
     if ([[urlTextField stringValue] length]) {
- 
-		[self readFromURL:url ofType:@"xml"];
+		NSError *error;
+		
+		[self readFromURL:url ofType:@"xml" error:&error];
 		
 	} else {
         [self setData:nil encoding:nil];
