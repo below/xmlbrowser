@@ -11,6 +11,8 @@
 			<array>
 				<string>xml</string>
 				<string>plist</string>
+				<string>xhtml</string>
+				<string>html</string>
 			</array>
 			<key>CFBundleTypeName</key>
 			<string>xml</string>
