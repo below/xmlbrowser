@@ -12,7 +12,7 @@
 @interface VBTextView : NSTextView {
 	IBOutlet NSButton * actionButton;
 }
-- (IBAction *) escapeQuotes:(id)sender;
-- (IBAction *) unescapeQuotes:(id)sender;
+- (IBAction) escapeQuotes:(id)sender;
+- (IBAction) unescapeQuotes:(id)sender;
 
 @end

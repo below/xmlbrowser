@@ -19,7 +19,7 @@
 
 #pragma mark Added by Alexander v. Below
 
-- (IBAction *) escapeQuotes:(id)sender
+- (IBAction) escapeQuotes:(id)sender
 {
 	NSMutableString * theString = [[[self string] mutableCopy] autorelease];
 	
@@ -28,7 +28,7 @@
 	[self setString:theString];
 }
 
-- (IBAction *) unescapeQuotes:(id)sender
+- (IBAction) unescapeQuotes:(id)sender
 {
 	NSMutableString * theString = [[[self string] mutableCopy] autorelease];
 	
